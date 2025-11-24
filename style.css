@@ -7,25 +7,125 @@
 
 /* --------- BODY --------- */
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: linear-gradient(180deg, #0d0249 0%, #14006d 100%);
+    font-family: "Open Sans", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif ;
+    background: linear-gradient(180deg, #0d0249 0%, #3811e6 100%);
     color: white;
-    padding: 40px;
     line-height: 1.6;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.container {
+    padding: 700px;
+}
+
+.github{
+    width: 900px;      
+    height: auto;      
+    border-radius: 10px;  
+    display: block;    
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.github-link {
+    display: inline-flex;      
+    flex-direction: column;    
+    align-items: center;       
+    text-decoration: none;     
+    color: inherit;            
+}
+
+.github:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+.linkedin{
+    width: 500px;      
+    height: auto;      
+    border-radius: 10px;  
+    display: block;    
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.linkedin-link{
+    display: inline-flex;      
+    flex-direction: column;    
+    align-items: center;       
+    text-decoration: none;     
+    color: inherit;     
+}
+
+.linkedin:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+/* --------- SOCIAL LINKS (GITHUB + LINKEDIN) --------- */
+.socials {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 24px 0;
+}
+
+.socials a {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.socials img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.socials h2 {
+    margin-top: 8px;
+    font-size: 1.5rem;
+}
+
+/* smaller screens: reduce image size */
+@media (max-width: 400px) {
+    .socials img {
+        width: 92px;
+    }
 }
 
 /* --------- TITOLI --------- */
+.evidenziata {
+    font-size: 1.8rem;
+    color: rgb(6, 237, 253);
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
 h1 {
-    font-size: 2.5rem;
-    color: #222;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4.5rem;
+    color: #ffffff;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 h2 {
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 1.8rem;
-    color: #444;
+    color: #ffffff;
 }
 
 h3 {
@@ -36,10 +136,10 @@ h3 {
 
 /* --------- SEZIONE PROGETTI --------- */
 .project {
-    background: white;
+    background: rgb(182, 253, 255);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
