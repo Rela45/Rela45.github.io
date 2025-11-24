@@ -8,8 +8,8 @@
 /* --------- BODY --------- */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    background: #0d0249;
-    color: #333;
+    background: linear-gradient(to bottom, #0d0249, #1a0a7a);
+    color: white;
     padding: 40px;
     line-height: 1.6;
 }
