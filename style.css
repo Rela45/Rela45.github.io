@@ -1,0 +1,66 @@
+/* --------- RESET BASE --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------- BODY --------- */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+/* --------- TITOLI --------- */
+h1 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #444;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #003366;
+}
+
+/* --------- SEZIONE PROGETTI --------- */
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+/* --------- PARAGRAFI --------- */
+p {
+    font-size: 1.1rem;
+}
+
+/* --------- LAYOUT RESPONSIVE --------- */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
