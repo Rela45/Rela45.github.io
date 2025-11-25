@@ -58,10 +58,11 @@ body {
 }
 
 .container {
-    max-width: 1000px;    /* change this to control how wide the content column is */
+    max-width: 100px;    /* change this to control how wide the content column is */
     margin: 0 auto;       /* center the content column in the viewport */
-    padding: 294px; 
+    padding: 24px; 
 }
+
 
 .github{
     width: 900px;      
@@ -165,6 +166,27 @@ h2 {
     margin-bottom: 20px;
     font-size: 1.8rem;
     color: #ffffff;
+}
+.section-title h2{
+    position: relative;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    text-align: left;
+}
+
+/* underline only for the Progetti section */
+.section-title::after {
+    content: "";
+    display: block;
+    width: 1200px;
+    height: 1px;
+    background: linear-gradient(90deg,#ececec00,#3805af,#ececec00);
+    margin: 8px auto 0 auto;
+    border-radius: 4px;
+    transform: translateX(0px); /* nudge the line to the right */
 }
 
 h3 {
