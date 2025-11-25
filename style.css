@@ -8,7 +8,7 @@
 /* --------- BODY --------- */
 body {
     font-family: "Open Sans", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif ;
-    background: linear-gradient(180deg, #000000 0%, #c9c7c7 100%);
+    background: linear-gradient(180deg, #000000 0%, #c9c7c7 200%);
     color: white;
     line-height: 1.6;
 }
@@ -60,7 +60,7 @@ body {
 .container {
     max-width: 100px;    /* change this to control how wide the content column is */
     margin: 0 auto;       /* center the content column in the viewport */
-    padding: 24px; 
+    padding: 204px; 
 }
 
 
@@ -162,27 +162,28 @@ h1 {
 }
 
 h2 {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #ffffff;
 }
-.section-title h2{
+.section-title{
     position: relative;
-    font-size: 1.8rem;
     color: #ffffff;
-    margin-top: 40px;
+    margin-top: 0px;
     margin-bottom: 20px;
-    margin-left: 200px;
-    text-align: left;
 }
 
+.section-title h2{
+    display: flex;
+    margin-left:30%;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 /* underline only for the Progetti section */
 .section-title::after {
     content: "";
     display: block;
     width: 1200px;
-    height: 1px;
+    height: 2px;
     background: linear-gradient(90deg,#ececec00,#3805af,#ececec00);
     margin: 8px auto 0 auto;
     border-radius: 4px;
