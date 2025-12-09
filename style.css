@@ -136,7 +136,7 @@ body {
 }
 
 .socials img {
-    width: 500px;
+    width: 250px;
     height: auto;
     border-radius: 10px;
     display: block;
@@ -219,7 +219,7 @@ h3 {
 }
 
 .project {
-    width: 320px;
+    width: 500px;
     background: linear-gradient(180deg, rgba(0,0,0,0.95), rgba(0,0,0,0.95));
     padding: 20px;
     border-radius: 20px;
