@@ -1,5 +1,6 @@
 /* --------- RESET BASE --------- */
 * {
+    :root { --bg:#071025; --card:#0f1724; --text:#e6eef8; --accent:#7c5cff; }
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +8,7 @@
 
 /* --------- BODY --------- */
 body {
-    font-family: "Open Sans", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif ;
+    font-family: "Inter", system-ui, sans-serif;
     background: linear-gradient(180deg, #000000 0%, #c9c7c7 200%);
     color: white;
     line-height: 1.6;
@@ -51,6 +52,18 @@ body {
     text-decoration: none;
     width: fit-content;
     transition: opacity 0.2s ease;
+}
+
+.btn.primary { 
+    background: var(--accent); 
+    color: #fff; 
+    padding: 10px 16px; border-radius: 8px; 
+    text-decoration:none; 
+    display:inline-block; 
+    transition: transform .18s ease; 
+} 
+.btn.primary:hover{ 
+    transform: translateY(-3px); 
 }
 
 .btn:hover {
